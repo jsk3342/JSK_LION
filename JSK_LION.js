@@ -11,7 +11,12 @@ fullCheck.addEventListener("click", function () {
 });
 
 let loginBtn = document.querySelector("#w-btn");
+let modal = document.querySelector(".black-bg");
+
 loginBtn.addEventListener("click", function () {
-  emptyCheck.classList.remove("hidden");
-  fullCheck.classList.add("hidden");
+  modal.classList.add("show-modal");
+});
+
+window.addEventListener("click", e => {
+  e.target === modal ? modal.classList.remove("show-modal") : false;
 });

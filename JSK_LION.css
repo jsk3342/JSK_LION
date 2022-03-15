@@ -26,11 +26,18 @@ body {
   position: sticky;
   padding: 10px;
 }
+.header1 {
+  text-align: center;
+  padding: 10px;
+}
 .header:before {
   content: url(LDH_LION_img/close.png);
   position: absolute;
   right: 20px;
   top: 30px;
+}
+.header:hover:before {
+  cursor: pointer;
 }
 
 .login_btn {
@@ -177,18 +184,20 @@ span.or-txt:after {
   color: white;
 }
 
+.w-btn-red {
+  background-color: rgba(255, 0, 0, 0.589);
+  color: white;
+}
+
 .w-btn {
   margin: 0;
   padding: 16px;
-
   font-size: 30px;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
-
   display: inline-block;
   width: 100%;
-
   border: none;
   border-radius: 4px;
 }
@@ -206,15 +215,46 @@ span.or-txt:after {
 }
 
 .black-bg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
   background: rgba(0, 0, 0, 0.5);
   z-index: 5;
-  padding: 30px;
+  padding: 30px 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translate(-50%, -100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
 }
 .white-bg {
+  position: relative;
   background: white;
+
   border-radius: 5px;
-  padding: 30px;
+  padding: 30px 30px;
+}
+
+.show-modal {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.main_form {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  padding: 20px 0px;
+  margin: 10px 0px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 4px;
 }
