@@ -12,6 +12,13 @@
     />
   </head>
   <body>
+    <div class="black-bg">
+      <div class="white-bg">
+        <h4>로그인하세요</h4>
+        <button class="btn btn-danger" id="close">닫기</button>
+      </div>
+    </div>
+
     <div class="container">
       <div class="inner">
         <div class="header">
@@ -21,10 +28,24 @@
           <div class="login_check">
             <h3>위니브에서 여러분의 궁금증을 해결하세요! :)</h3>
             <p>
-              <img src="LDH_LION_img/icon_check_empty.png" alt="" /> 로그인 상태
-              유지
+              <img
+                class="pointer"
+                id="empty_check"
+                src="LDH_LION_img/icon_check_empty.png"
+                alt=""
+              />
+              <img
+                class="hidden pointer"
+                id="full_check"
+                src="LDH_LION_img/icon_check.png"
+                alt=""
+              />
+
+              로그인 상태 유지
             </p>
-            <h3 class="login_btn">로그인</h3>
+            <button type="button" id="w-btn" class="btn w-btn w-btn-blue">
+              로그인
+            </button>
             <div class="login_sub">
               <a>회원가입</a>
               <p>|</p>
@@ -33,19 +54,24 @@
           </div>
           <div>
             <span class="or-txt">또는</span>
-            <a class="btn btn1" type="button" onclick="newPage()"
+            <a
+              class="btn btn1"
+              target="_blank"
+              href="https://accounts.google.com/ServiceLogin/webreauth?sacu=1&passive=1209600&hl=ko&acui=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
               >구글 계정으로 로그인</a
             >
-            <a class="btn btn2" href="https://www.facebook.com/"
+            <a class="btn btn2" target="_blank" href="https://www.facebook.com/"
               >페이스북 계정으로 로그인</a
             >
             <a
               class="btn btn3"
+              target="_blank"
               href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com"
               >네이버 계정으로 로그인</a
             >
             <a
               class="btn btn4"
+              target="_blank"
               href="https://accounts.kakao.com/login?continue=https%3A%2F%2Flogins.daum.net%2Faccounts%2Fksso.do%3Frescue%3Dtrue%26url%3Dhttps%253A%252F%252Fwww.daum.net"
               >카카오톡 계정으로 로그인</a
             >
