@@ -1,0 +1,167 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+  font-family: "Nanum Gothic";
+  font-size: 18px;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+}
+
+.login {
+  width: 540px;
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header {
+  text-align: center;
+  border-bottom: 2px solid lightgray;
+  position: sticky;
+  padding: 8px;
+}
+.header:before {
+  content: url(LDH_LION_img/close.png);
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+.login_btn {
+  color: white;
+  background-color: #2f80ec;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+a.btn {
+  display: block;
+  text-decoration: none;
+  color: gray;
+  border: 1px solid lightgray;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 18px;
+  margin: 10px;
+  opacity: 0.8;
+  position: relative;
+}
+
+a.btn:hover {
+  opacity: 1;
+}
+
+a.btn1 {
+  border: 2px solid #8c8c8c;
+}
+a.btn2 {
+  border: 2px solid #a1d0ec;
+}
+a.btn3 {
+  border: 2px solid #b5e2bb;
+}
+a.btn4 {
+  border: 2px solid #fff4c1;
+}
+a.btn1:before {
+  content: url(LDH_LION_img/icon_google.png);
+  position: absolute;
+  left: 15px;
+  top: 20px;
+}
+a.btn2:before {
+  content: url(LDH_LION_img/icon_facebook.png);
+  position: absolute;
+  left: 18px;
+  top: 18px;
+}
+a.btn3:before {
+  content: url(LDH_LION_img/icon_naver.png);
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+a.btn4:before {
+  content: url(LDH_LION_img/icon_kakao.png);
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.login_check {
+  padding: 5px;
+  text-align: center;
+}
+
+.login_check h3:first-of-type {
+  text-align: left;
+  font: bold;
+}
+
+.login_check p:first-of-type {
+  text-align: left;
+}
+
+.login_check img {
+  vertical-align: middle;
+}
+
+.login_check a {
+  font-weight: bold;
+  color: #222;
+}
+
+.login_check a:hover {
+  text-decoration: underline;
+}
+
+.login_sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.login_sub p {
+  padding: 0px 15px;
+}
+
+.login_sub a {
+  color: gray;
+}
+
+span.or-txt {
+  display: block;
+  text-align: center;
+  margin: 10px 0px;
+  padding: 10px;
+  position: relative;
+  color: gray;
+}
+
+span.or-txt:before {
+  content: "";
+  position: absolute;
+  background-color: gray;
+  width: 44%;
+  height: 1px;
+  top: 20px;
+  left: 0;
+}
+span.or-txt:after {
+  content: "";
+  position: absolute;
+  background-color: gray;
+  width: 44%;
+  height: 1px;
+  top: 20px;
+  right: 0;
+}
